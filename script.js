@@ -101,7 +101,7 @@
          */
         window.onbeforeunload = function () {
             if (primaryStatus) {
-                localStorage.wsOpen = false;
+                localStorage.setItem('wsOpen', false);
                 clearInterval(refreshIntervalId);
                 intercom.emit('TAB_CLOSED', {count: count});
             }
