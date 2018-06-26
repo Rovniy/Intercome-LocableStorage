@@ -2,12 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Intercome.js Singletone App</title>
     <script src="intercom.min.js" type="text/javascript"></script>
     <script src="LockableStorage.js" type="text/javascript"></script>
     <script src="script.js" type="text/javascript"></script>
 </head>
 <body>
-<h1>Counter: <small id="counter">0</small></h1>
+<h1>Counter:
+    <small id="counter">0</small>
+</h1>
+<h2>Primary window:
+    <small id="socketStatus">false</small>
+</h2>
+<h2>Socket status:
+    <small id="wsopen">false</small>
+</h2>
+<hr/>
+<button onclick="webSocketInit()">Set tab active</button>
+<br/>
+<br/>
+<button onclick="semiCloseTab()">Emulate close tab</button>
 </body>
 </html>
